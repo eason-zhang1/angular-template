@@ -1,6 +1,7 @@
 import {Routes, RouterModule} from '@angular/router';
 import {LayoutComponent} from "../layout/layout.component";
 import {IndexComponent} from "./index/index.component";
+import {Page404Component} from "./pages/page404/page404.component";
 
 
 const routes: Routes = [
@@ -11,10 +12,14 @@ const routes: Routes = [
     component: LayoutComponent,
     children: [
       {
-        path: 'index',
+        path: 'index/haha/haha',
         component: IndexComponent
       }
     ]
+  },
+  {
+    path: '**',
+    component: Page404Component
   }
 ];
 

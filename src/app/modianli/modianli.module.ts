@@ -1,9 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from "../shared/shared.module";
-import { MODIANLI_ROUTE } from "./modianli.routes";
-import { IndexComponent } from './index/index.component';
 import {LayoutModule} from "../layout/layout.module";
+import {PagesModule} from "./pages/pages.module";
+import { AbmModule } from 'angular-baidu-maps';
+
+import { MODIANLI_ROUTE } from "./modianli.routes";
+
+
+import { IndexComponent } from './index/index.component';
 
 /**
  * 应用业务逻辑
@@ -12,8 +17,12 @@ import {LayoutModule} from "../layout/layout.module";
   imports: [
     SharedModule,
     LayoutModule,
+    PagesModule,
 
-    MODIANLI_ROUTE
+    MODIANLI_ROUTE,
+    AbmModule.forRoot({
+      apiKey: 'p3HIQIqLqKVQOXao1IiLp5O0eTFakjEP' // app key为必选项
+    })
   ],
   declarations: [
     IndexComponent
