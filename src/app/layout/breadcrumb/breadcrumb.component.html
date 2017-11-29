@@ -1,0 +1,5 @@
+<div class="breadcrumb">
+  <nz-breadcrumb *ngIf="breadcrumb && breadcrumb.length > 0" [nzSeparator]="'>'">
+    <nz-breadcrumb-item *ngFor="let item of breadcrumb">{{item}}</nz-breadcrumb-item>
+  </nz-breadcrumb>
+</div>

@@ -1,0 +1,99 @@
+:host {
+  ::ng-deep {
+    .logo {
+      height: 64px;
+      line-height: 64px;
+      background: #108ee9;
+      color: white;
+      text-align: center;
+    }
+
+    .ant-layout {
+      background: none!important;
+    }
+    .ant-layout-sider {
+      .ant-menu-inline {
+        .ant-menu-item {
+          font-size: 14px;
+
+          &:after {
+            border-right: none;
+          }
+        }
+
+        .ant-menu-submenu-inline {
+          .ant-menu-submenu-title {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .ant-menu-submenu-open {
+        border-left:3px solid #108ee9;
+        background-color: #fcfcfc;
+
+        .ant-menu {
+          background-color: #fcfcfc;
+        }
+      }
+    }
+
+    .ant-layout-sider-collapsed {
+      .nav-text {
+        display: none;
+      }
+
+      .ant-menu-submenu-title {
+        &:after {
+          display: none;
+        }
+      }
+
+      .anticon {
+        font-size: 18px;
+        margin-left: 8px;
+      }
+    }
+
+    .ant-layout-sider {
+      background: white !important;
+      color: #fff;
+      line-height: 120px;
+    }
+
+
+    .header {
+      color: white;
+      background: #108ee9;
+      padding:0;
+
+      .trigger {
+        font-size: 18px;
+        /*line-height: 64px;*/
+        padding: 8px 16px;
+        cursor: pointer;
+        transition: color .3s;
+
+        &:hover {
+          background-color: #3ba0e9;
+        }
+      }
+    }
+
+
+    .nz-content {
+      margin:0 16px;
+
+      .content-main {
+        padding:24px;
+        background: #fff;
+        min-height: 760px;
+      }
+    }
+
+    .footer {
+      text-align: center;
+    }
+  }
+}
+

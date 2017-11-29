@@ -1,0 +1,31 @@
+<div class="wrapper">
+  <nz-layout>
+    <!--  -->
+    <nz-sider nzCollapsible [(nzCollapsed)]="isCollapsed" [nzTrigger]="null">
+      <app-sider [isCollapsed]="isCollapsed"></app-sider>
+    </nz-sider>
+
+    <nz-layout>
+      <!--  -->
+      <nz-header class="header">
+        <app-header (collapsedEmitter)="collapsedChange($event)" style="width: 100%;"></app-header>
+      </nz-header>
+
+      <nz-content class="nz-content">
+        <!-- -->
+
+        <app-breadcrumb></app-breadcrumb>
+
+        <!--  -->
+        <div class="content-main">
+          <router-outlet></router-outlet>
+        </div>
+      </nz-content>
+
+      <!--  -->
+      <nz-footer class="footer">
+        <app-footer></app-footer>
+      </nz-footer>
+    </nz-layout>
+  </nz-layout>
+</div>
