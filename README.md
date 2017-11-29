@@ -29,4 +29,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## based on ant design
 
-need help to visit [ant-design](https://ng.ant.design) to find help.
+need help to visit [ant-design](https://ng.ant.design).
