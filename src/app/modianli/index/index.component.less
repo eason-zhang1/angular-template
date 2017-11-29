@@ -1,0 +1,35 @@
+.tt {
+  a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px;
+    color: white;
+    background-color: #3ba0e9;
+
+
+    &:hover{
+      &::before, &::after {
+        opacity: 1;
+        transform: translateX(0px);/*x轴移动*/
+      }
+    }
+
+    &::before {
+      margin-right: 10px;
+      content: "[";
+      display: inline-block;
+      transform: translateX(20px);
+      opacity: 0;/*初始透明度为0*/
+      transition: transform 0.3s, opacity 0.2s;/*过渡效果*/
+    }
+
+    &::after {
+      margin-left: 10px;
+      content: "]";
+      display: inline-block;
+      transform: translateX(-20px);
+      opacity: 0;/*初始透明度为0*/
+      transition: transform 0.3s, opacity 0.2s;/*过渡效果*/
+    }
+  }
+}
